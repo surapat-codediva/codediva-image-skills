@@ -1,0 +1,47 @@
+# codediva-image-skills
+
+Claude Code skills for text-to-image generation and image editing via the
+Wanxiang (`wan2.6-t2i` / `wan2.6-image`) models on Alibaba MaaS.
+
+## Skills
+
+- **wan-text-to-image** — generate a brand-new image from a text prompt.
+- **wan-image-edit** — edit/retouch an existing image with an instruction.
+
+Both skills share `_shared/wan-api-key.md` (API key resolution) and
+`_shared/wan-async-call.md` (submit + poll the async generation task).
+
+## Install
+
+Requires the [`skills` CLI](https://skills.sh/) (installed on demand via `npx`).
+
+```bash
+# install both skills into the current project
+npx skills add surapat-codediva/codediva-image-skills --all
+
+# or install a single skill
+npx skills add surapat-codediva/codediva-image-skills -s wan-text-to-image
+
+# install globally (user-level) instead of per-project
+npx skills add surapat-codediva/codediva-image-skills --all -g
+```
+
+## Setup
+
+You need an Alibaba MaaS API key with access to the Wanxiang `wan2.6-t2i` and
+`wan2.6-image` models.
+
+On first use, the skill will ask for the key and store it in `.env` at your
+project root as `WAN_API_KEY=...`. It also makes sure `.env` is listed in
+`.gitignore` so the key never gets committed. See `.env.example` for the
+expected shape.
+
+## Usage
+
+Once installed, just ask the agent naturally:
+
+- "สร้างภาพ..." / "generate an image of a fox reading a book" → `wan-text-to-image`
+- "แก้ภาพนี้..." / "edit this image, make the sky sunset orange" → `wan-image-edit`
+
+Generated images are downloaded locally (the API's URLs expire after 24h) —
+the agent will ask where to save each file.
