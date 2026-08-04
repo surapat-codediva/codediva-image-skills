@@ -8,9 +8,9 @@
     {
       "name": "codediva-image-skills",
       "source": "./",
-      "description": "Wanxiang text-to-image and image-edit skills, via Alibaba MaaS.",
+      "description": "Wanxiang text-to-image and image-edit skills, via Alibaba MaaS — plus grill-first variants that interview requirements before generating.",
       "category": "media",
-      "keywords": ["image", "text-to-image", "image-edit", "wanxiang"]
+      "keywords": ["image", "text-to-image", "image-edit", "wanxiang", "grill"]
     }
   ]
 }

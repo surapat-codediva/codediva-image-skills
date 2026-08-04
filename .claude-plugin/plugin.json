@@ -1,6 +1,6 @@
 {
   "name": "codediva-image-skills",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Wanxiang text-to-image and image-edit skills for Claude Code, via Alibaba MaaS.",
   "author": {
     "name": "Surapat",
@@ -8,6 +8,6 @@
   },
   "repository": "https://github.com/surapat-codediva/codediva-image-skills",
   "license": "UNLICENSED",
-  "keywords": ["image", "text-to-image", "image-edit", "wanxiang"],
-  "skills": ["./wan-text-to-image", "./wan-image-edit"]
+  "keywords": ["image", "text-to-image", "image-edit", "wanxiang", "grill"],
+  "skills": ["./wan-text-to-image", "./wan-image-edit", "./grill-wan-t2i", "./grill-wan-image-edit"]
 }

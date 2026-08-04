@@ -7,8 +7,14 @@ Wanxiang (`wan2.6-t2i` / `wan2.6-image`) models on Alibaba MaaS.
 
 - **wan-text-to-image** — generate a brand-new image from a text prompt.
 - **wan-image-edit** — edit/retouch an existing image with an instruction.
+- **grill-wan-t2i** — interviews you one question at a time (with recommended
+  defaults) about subject, style, composition, mood, and size before
+  generating, then hands off to `wan-text-to-image`.
+- **grill-wan-image-edit** — same grilling treatment for edits: what to
+  change, what to preserve, style consistency, before handing off to
+  `wan-image-edit`.
 
-Both skills share `_shared/wan-api-key.md` (API key resolution) and
+All four skills share `_shared/wan-api-key.md` (API key resolution) and
 `_shared/wan-async-call.md` (submit + poll the async generation task).
 
 ## Install
@@ -59,6 +65,8 @@ Once installed, just ask the agent naturally:
 
 - "สร้างภาพ..." / "generate an image of a fox reading a book" → `wan-text-to-image`
 - "แก้ภาพนี้..." / "edit this image, make the sky sunset orange" → `wan-image-edit`
+- "grill me before you generate this" / "ถามให้ครบก่อนสร้างภาพ..." → `grill-wan-t2i`
+- "grill me before you edit this" / "ถามให้ครบก่อนแก้ภาพ..." → `grill-wan-image-edit`
 
 Generated images are downloaded locally (the API's URLs expire after 24h) —
 the agent will ask where to save each file.
