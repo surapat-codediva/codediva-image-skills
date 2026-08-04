@@ -13,18 +13,33 @@ Both skills share `_shared/wan-api-key.md` (API key resolution) and
 
 ## Install
 
-Requires the [`skills` CLI](https://skills.sh/) (installed on demand via `npx`).
+This is a private repo, so both installers below need a GitHub account with
+access to it (`gh auth login`, or an SSH key added to GitHub).
+
+### Claude Code plugin
+
+```bash
+/plugin marketplace add surapat-codediva/codediva-image-skills
+/plugin install codediva-image-skills@codediva
+```
+
+Managed, read-only, updates when this repo updates.
+
+### npx (skills.sh, any agent)
 
 ```bash
 # install both skills into the current project
-npx skills add surapat-codediva/codediva-image-skills --all
+npx skills@latest add surapat-codediva/codediva-image-skills --all
 
 # or install a single skill
-npx skills add surapat-codediva/codediva-image-skills -s wan-text-to-image
+npx skills@latest add surapat-codediva/codediva-image-skills -s wan-text-to-image
 
 # install globally (user-level) instead of per-project
-npx skills add surapat-codediva/codediva-image-skills --all -g
+npx skills@latest add surapat-codediva/codediva-image-skills --all -g
 ```
+
+Copies editable skill files into your project — hack on them freely, pull
+updates later with `npx skills update`.
 
 ## Setup
 

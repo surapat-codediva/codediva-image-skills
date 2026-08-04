@@ -1,0 +1,11 @@
+{
+  "name": "codediva-image-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Codediva's Wanxiang text-to-image and image-edit agent skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surapat-codediva/codediva-image-skills"
+  },
+  "license": "UNLICENSED"
+}

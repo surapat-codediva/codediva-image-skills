@@ -1,0 +1,16 @@
+{
+  "name": "codediva",
+  "owner": {
+    "name": "Surapat"
+  },
+  "description": "Codediva's Claude Code skills, as an installable plugin.",
+  "plugins": [
+    {
+      "name": "codediva-image-skills",
+      "source": "./",
+      "description": "Wanxiang text-to-image and image-edit skills, via Alibaba MaaS.",
+      "category": "media",
+      "keywords": ["image", "text-to-image", "image-edit", "wanxiang"]
+    }
+  ]
+}
