@@ -1,6 +1,6 @@
 {
   "name": "codediva-image-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Codediva's Wanxiang text-to-image and image-edit agent skills",
   "repository": {

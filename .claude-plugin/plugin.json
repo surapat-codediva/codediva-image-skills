@@ -1,6 +1,6 @@
 {
   "name": "codediva-image-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wanxiang text-to-image and image-edit skills for Claude Code, via Alibaba MaaS.",
   "author": {
     "name": "Surapat",
