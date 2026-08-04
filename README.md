@@ -43,13 +43,15 @@ updates later with `npx skills update`.
 
 ## Setup
 
-You need an Alibaba MaaS API key with access to the Wanxiang `wan2.6-t2i` and
-`wan2.6-image` models.
+You need an Alibaba MaaS workspace with access to the Wanxiang `wan2.6-t2i`
+and `wan2.6-image` models — specifically its API key and its
+workspace-specific DashScope-native base URL (each MaaS workspace has its
+own, shaped like `https://ws-<workspace-id>.<region>.maas.aliyuncs.com/api/v1`).
 
-On first use, the skill will ask for the key and store it in `.env` at your
-project root as `WAN_API_KEY=...`. It also makes sure `.env` is listed in
-`.gitignore` so the key never gets committed. See `.env.example` for the
-expected shape.
+On first use, the skill will ask for both and store them in `.env` at your
+project root as `WAN_API_KEY=...` and `WAN_BASE_URL=...`. It also makes sure
+`.env` is listed in `.gitignore` so neither value gets committed. See
+`.env.example` for the expected shape.
 
 ## Usage
 
